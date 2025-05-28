@@ -2,20 +2,24 @@ import styled from "styled-components";
 import Logo from "../../components/logo/Logo.tsx";
 import Navigation from "../../components/navigation/Navigation.tsx";
 import Social from "../../components/social/Social.tsx";
+import {theme} from "../../styles/Theme.tsx";
+import {Container} from "../../components/Container.tsx";
+import {FlexWrapper} from "../../components/FlexWrapper.tsx";
 
 export const Header = () => {
     return (
         <StyledHeader>
-            <Logo/>
-            <Navigation/>
-            <Social/>
-
+            <Container>
+                <FlexWrapper justify={"space-between"} align={"center"}>
+                    <Logo/>
+                    <Navigation/>
+                    <Social/>
+                </FlexWrapper>
+            </Container>
         </StyledHeader>
     );
 };
 
 const StyledHeader = styled.header`
-    background-color: #0f1624;
-    display: flex;
-    justify-content: space-around;
+    background-color: ${theme.colors.primaryBg};
 `

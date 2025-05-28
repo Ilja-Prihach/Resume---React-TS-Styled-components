@@ -6,6 +6,7 @@ import projectPhoto from "../../../assets/images/project.webp";
 
 
 
+
 export const Projects = () => {
     return (
          <StyledProjects>
@@ -21,8 +22,8 @@ export const Projects = () => {
 };
 
 const StyledProjects = styled.section`
+
     min-height: 100vh;
-    background-color: #161d2a;
 `
 
 

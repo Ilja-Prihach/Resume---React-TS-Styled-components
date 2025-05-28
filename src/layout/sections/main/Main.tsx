@@ -6,6 +6,7 @@ import {Button} from "../../../components/button/Button.tsx";
 
 
 
+
 export const Main = () => {
     return (
         <StyledMain>
@@ -31,9 +32,9 @@ const Photo = styled.img`
     object-fit: cover;
 `
 
-const StyledMain =  styled.div`
+const StyledMain =  styled.section`
+    
     min-height: 100vh;
-    background-color: #0f1624;
 `
 const MainTitle = styled.h1`
     font-weight: 600;

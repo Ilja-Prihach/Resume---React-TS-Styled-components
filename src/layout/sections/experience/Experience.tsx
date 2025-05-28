@@ -3,6 +3,7 @@ import {Subtitle} from "../../../components/subTitle/Subtitle.tsx";
 import {EcperiensCard} from "../../../components/experience/EcperiensCard.tsx";
 
 
+
 export const Experience = () => {
     return (
         <StyledExperience>
@@ -17,8 +18,8 @@ export const Experience = () => {
     );
 };
 
-const StyledExperience = styled.div`
-    background-color: #161d2a;
+const StyledExperience = styled.section`
+    
     min-height: 600px;
 `
 

@@ -3,6 +3,7 @@ import {FlexWrapper} from "../../../components/FlexWrapper.tsx";
 import styled from "styled-components";
 import {TehnologieSocial} from "../../../components/tehnologie/TehnologieSocial.tsx";
 import {TehnologieCard} from "../../../components/tehnologie/TehnologieCard.tsx";
+import {theme} from "../../../styles/Theme.tsx";
 
 
 export const Tehnologies = () => {
@@ -21,8 +22,8 @@ export const Tehnologies = () => {
     );
 };
 
-export const StyledTehnologies = styled.div`
-    background-color: #0f1624;
+export const StyledTehnologies = styled.section`
+    background-color: ${theme.colors.secondaryBg};
     min-height: 100vh;
 `
 
