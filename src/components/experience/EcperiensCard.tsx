@@ -28,7 +28,6 @@ const EcperiensCardTitle = styled.h3<{ isLast?: boolean }>`
     font-size: 26px;
     text-align: center;
     position: relative;
-    //display: inline-block;
     padding-bottom: 25px;
     &::before{
         content: "";

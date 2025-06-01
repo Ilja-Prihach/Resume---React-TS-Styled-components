@@ -6,13 +6,13 @@ export const Navigation = () => {
         <StyledNav>
             <ul>
                 <li>
-                    <a href="#">Projects</a>
+                    <Link href="#">Projects</Link>
                 </li>
                 <li>
-                    <a href="#">Technologies</a>
+                    <Link href="#">Technologies</Link>
                 </li>
                 <li>
-                    <a href="#">About me</a>
+                    <Link href="#">About me</Link>
                 </li>
             </ul>
         </StyledNav>
@@ -22,6 +22,8 @@ export const Navigation = () => {
 export default Navigation;
 
 const StyledNav = styled.nav`
+    position: relative;
+    display: inline-block;
     ul {
         display: flex;
         gap: 80px;
@@ -29,5 +31,33 @@ const StyledNav = styled.nav`
     a {
         font-weight: 500;
         font-size: 16px;
+        position: relative; 
+        overflow: hidden; 
     }
-`
+`;
+
+const Link = styled.a`
+    &::after,
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(to right, #ff0000, #00ffff);
+        bottom: -5px;
+        left: 0;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.4s ease-out;
+    }
+
+    &::before {
+        top: -5px;
+        transform-origin: left;
+    }
+
+    &:hover::after,
+    &:hover::before {
+        transform: scaleX(1);
+    }
+`;

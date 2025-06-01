@@ -7,19 +7,19 @@ export const Social = () => {
         <StyledSocial>
             <ul>
                 <li>
-                    <a href="#">
+                    <Link href="#">
                         <Icon iconId={'githubNav'} />
-                    </a>
+                    </Link>
                 </li>
                 <li>
-                    <a href="#">
+                    <Link href="#">
                         <Icon iconId={'linkedinNav'} />
-                    </a>
+                    </Link>
                 </li>
                 <li>
-                    <a href="#">
+                    <Link href="#">
                         <Icon iconId={'telegramNav'} />
-                    </a>
+                    </Link>
                 </li>
             </ul>
         </StyledSocial>
@@ -33,4 +33,14 @@ const StyledSocial = styled.nav`
         display: flex;
         gap: 25px;
     }
+    li {
+        position: relative;
+        transition: all 0.5s ease-in-out;
+    }
 `
+const Link = styled.a`
+    &:hover > * {
+        transform: scale(1.15);
+        filter: drop-shadow(0 0 10px rgb(225, 28, 222)); 
+    }
+`;
