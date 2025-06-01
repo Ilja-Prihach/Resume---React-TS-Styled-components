@@ -4,20 +4,25 @@ import styled from "styled-components";
 import {TehnologieSocial} from "../../../components/tehnologie/TehnologieSocial.tsx";
 import {TehnologieCard} from "../../../components/tehnologie/TehnologieCard.tsx";
 import {theme} from "../../../styles/Theme.tsx";
+import {Container} from "../../../components/Container.tsx";
 
 
 export const Tehnologies = () => {
     return (
         <StyledTehnologies>
-            <Subtitle>Technologies</Subtitle>
-            <TehnologieCard tehnologieTitle={"Html"} progress={85}/>
-            <TehnologieCard tehnologieTitle={"Css, Sass"} progress={80}/>
-            <TehnologieCard tehnologieTitle={"React"} progress={50}/>
-            <TehnologieCard tehnologieTitle={"Styled components"} progress={65}/>
-            <FlexWrapper direction="column" wrap="wrap">
-                <TehnologiesSubtitle>Additional technologies and skills</TehnologiesSubtitle>
-                <TehnologieSocial/>
-            </FlexWrapper>
+            <Container>
+                <Subtitle>Technologies</Subtitle>
+                <CardWrapper >
+                    <TehnologieCard tehnologieTitle={"Html"} progress={85}/>
+                    <TehnologieCard tehnologieTitle={"Css, Sass"} progress={80}/>
+                    <TehnologieCard tehnologieTitle={"React"} progress={50}/>
+                    <TehnologieCard tehnologieTitle={"Styled components"} progress={65}/>
+                </CardWrapper>
+                <FlexWrapper direction="column" align={"center"} gap={"70px"} >
+                    <TehnologiesSubtitle>Additional technologies and skills</TehnologiesSubtitle>
+                    <TehnologieSocial/>
+                </FlexWrapper>
+            </Container>
         </StyledTehnologies>
     );
 };
@@ -31,4 +36,12 @@ export const TehnologiesSubtitle = styled.h2`
     font-weight: 600;
     font-size: 44px;
     color: #fff;
+`
+
+const CardWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding-bottom: 120px;
 `

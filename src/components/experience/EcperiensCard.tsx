@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import {theme} from "../../styles/Theme.tsx";
+import {FlexWrapper} from "../FlexWrapper.tsx";
 
 type EcperiensCardPropsType = {
     experienceTitle: string
@@ -8,26 +10,24 @@ type EcperiensCardPropsType = {
 export const EcperiensCard = (props: EcperiensCardPropsType) => {
     return (
         <StyledEcperiensCard>
-            <EcperiensCardTitle>{props.experienceTitle}</EcperiensCardTitle>
-            <EcperiensCardDescr>{props.experienceDescr}</EcperiensCardDescr>
+            <FlexWrapper direction={"column"}>
+                <EcperiensCardTitle>{props.experienceTitle}</EcperiensCardTitle>
+                <EcperiensCardDescr>{props.experienceDescr}</EcperiensCardDescr>
+            </FlexWrapper>
         </StyledEcperiensCard>
+
     );
 };
 
 const StyledEcperiensCard = styled.div`
-    display: flex;
-    flex-direction: column;
-    width: 260px;
-    
+    width: 280px;
 `
-
 const EcperiensCardTitle = styled.h3`
     font-weight: 600;
     font-size: 26px;
-    color: #fff;
     text-align: center;
     position: relative;
-    display: inline-block;
+    //display: inline-block;
     padding-bottom: 25px;
     &::before{
         content: "";
@@ -35,15 +35,30 @@ const EcperiensCardTitle = styled.h3`
         width: 25px;
         height: 25px;
         border-radius: 50%;
-        background-color: #fff;
+        background-color: ${theme.colors.font};
         left:50%;
         transform: translateX(-50%);
         bottom: 0;
+        z-index: 2;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        width: calc(100% + 10%);
+        height: 8px;
+        border-radius: 83px;
+        background: ${theme.colors.accent};
+        bottom: 8px;
+        left:100%;
+        transform: translateX(-45%);
+        z-index: 1;
     }
 `
+
+
 const EcperiensCardDescr = styled.p`
     font-weight: 500;
     font-size: 18px;
     text-align: center;
-    color: #fff;
+    padding-top: 20px;
 `

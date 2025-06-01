@@ -25,8 +25,9 @@ const StyledNav = styled.nav`
     ul {
         display: flex;
         gap: 80px;
+    }
+    a {
         font-weight: 500;
         font-size: 16px;
-        color: #fff;
     }
 `

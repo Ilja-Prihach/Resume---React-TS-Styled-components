@@ -1,6 +1,7 @@
 
 import {Button} from "../../../../components/button/Button.tsx";
 import styled from "styled-components";
+import {theme} from "../../../../styles/Theme.tsx";
 
 type ProjectCardPropsType = {
     src:  string
@@ -25,16 +26,16 @@ const CardWrapper = styled.div`
     flex-direction: column;
     border: 1px solid #a39d9d;
     border-radius: 50px 0;
-    width: 550px;
-    height: 670px;
-    background-color: #0f1624;
+    width: 549px;
+    min-height: 670px;
+    background-color: ${theme.colors.primaryBg};
     padding: 25px;
     gap: 50px;
 `
 
 const ProjectImg = styled.img`
     border-radius: 24px 8px 8px 8px;
-    width: 500px;
+    max-width: 500px;
     height: 280px;
     object-fit: cover;
 `
@@ -43,11 +44,27 @@ const ProjectTitle = styled.h2`
     font-weight: 600;
     font-size: 30px;
     line-height: 89%;
-    color: #fff;
+    margin: 0 auto;
+    
+    position: relative;
+    
+    &::before{
+        content: "";
+        display: inline-block;
+        border-radius: 83px;
+        width: 300px;
+        height: 4px;
+         background: ${theme.colors.accent};
+       // background-color: red;
+        position: absolute;
+        left: 50%;
+        bottom: -23px;
+        transform: translateX(-50%);
+    }
 `
 const ProjectDescr = styled.p`
     font-weight: 500;
     font-size: 18px;
-    color: #fff;
+    padding-top: 25px;
 `
 

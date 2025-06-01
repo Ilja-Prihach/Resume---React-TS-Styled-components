@@ -2,6 +2,7 @@
 import styled from "styled-components";
 
 
+
 type TehnologieCardPropsType = {
     tehnologieTitle?: string
     progress?: number
@@ -11,8 +12,8 @@ type TehnologieCardPropsType = {
 export const TehnologieCard = (props: TehnologieCardPropsType) => {
     return (
         <StyledTehnologieProgress>
-            <TehnologieTitle>{props.tehnologieTitle}</TehnologieTitle>
-            <TehnologieProgress superprogress={props.progress} />
+                <TehnologieTitle>{props.tehnologieTitle}</TehnologieTitle>
+                <TehnologieProgress superprogress={props.progress} />
         </StyledTehnologieProgress>
     );
 };
@@ -22,7 +23,7 @@ const StyledTehnologieProgress =  styled.div``
 const TehnologieTitle = styled.h2`
     font-weight: 600;
     font-size: 26px;
-    color: #fff;
+    padding-left: 15px;
 `
 
 const TehnologieProgress = styled.div<{ superprogress?: number }>`
