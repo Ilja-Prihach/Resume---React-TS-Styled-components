@@ -1,5 +1,6 @@
 
 import photo from '../../../assets/images/myPhoto.webp'
+import drawingSVG from '../../../assets/images/drawing.svg';
 import styled from "styled-components";
 import {FlexWrapper} from "../../../components/FlexWrapper.tsx";
 import {Button} from "../../../components/button/Button.tsx";
@@ -18,9 +19,9 @@ export const Main = () => {
                         <MainDescription>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </MainDescription>
                         <Button>Let’s Begin</Button>
                     </MainBox>
-                    <div>
+                    <BoxPhoto>
                         <Photo src={photo} alt="MyPhoto"/>
-                    </div>
+                    </BoxPhoto>
                 </FlexWrapper>
             </Container>
         </StyledMain>
@@ -33,6 +34,8 @@ const Photo = styled.img`
     max-width: 380px;
     max-height: 450px;
     object-fit: cover;
+    z-index: 2;
+    position: relative;
 `
 
 const StyledMain =  styled.section`
@@ -56,4 +59,19 @@ const MainBox = styled.div`
     flex-direction: column;
     justify-content: flex-start;
     max-width: 673px;
+`
+
+const BoxPhoto = styled.div`
+    position: relative;
+    &::after {
+        content: '';
+        background: url(${drawingSVG}) no-repeat center; 
+        background-size: contain; 
+        width: 666px; 
+        height: 666px; 
+        position: absolute;
+        left: -13%;
+        transform: translateY(22%);
+        z-index: 1;
+    }
 `
