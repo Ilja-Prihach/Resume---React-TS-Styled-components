@@ -1,5 +1,5 @@
 
-import photo from '../../../assets/images/myPhoto.webp'
+import photo from '../../../assets/images/My-photo.webp'
 import drawingSVG from '../../../assets/images/drawing.svg';
 import styled from "styled-components";
 import {FlexWrapper} from "../../../components/FlexWrapper.tsx";
@@ -15,8 +15,8 @@ export const Main = () => {
             <Container>
                 <FlexWrapper align={"center"} justify={"space-between"} >
                     <MainBox>
-                        <MainTitle>Lorem ipsum dolor amet</MainTitle>
-                        <MainDescription>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </MainDescription>
+                        <MainTitle>My name is Ilja Prihach</MainTitle>
+                        <MainDescription>I'm a web developer based in Minsk. I've been developing websites and applications since 2017. I can be useful for your business. </MainDescription>
                         <Button>Let’s Begin</Button>
                     </MainBox>
                     <BoxPhoto>
@@ -53,11 +53,13 @@ const MainDescription = styled.p`
     padding-top: 15px;
     max-width: 480px;
     padding-bottom: 60px;
+    text-align: left;
 `
 const MainBox = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    align-items: flex-start;
     max-width: 673px;
 `
 

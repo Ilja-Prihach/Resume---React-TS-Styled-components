@@ -2,7 +2,10 @@ import styled from "styled-components";
 import {FlexWrapper} from "../../../components/FlexWrapper.tsx";
 import {ProjectCard} from "./projectCard/ProjectCard.tsx";
 import {Subtitle} from "../../../components/subTitle/Subtitle.tsx";
-import projectPhoto from "../../../assets/images/project.webp";
+import uber from "../../../assets/images/uber.jpg"
+import pulse from "../../../assets/images/pulse.jpg"
+import bread from "../../../assets/images/bread.jpg"
+import mac from "../../../assets/images/mac.jpg"
 import {Container} from "../../../components/Container.tsx";
 
 
@@ -14,10 +17,10 @@ export const Projects = () => {
              <Container>
                  <Subtitle>Projects</Subtitle>
                  <FlexWrapper wrap={"wrap"} gap={"40px"}>
-                     <ProjectCard description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."} src={`${projectPhoto}`} title={"Project 1"}></ProjectCard>
-                     <ProjectCard description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."} src={`${projectPhoto}`} title={"Project 2"}></ProjectCard>
-                     <ProjectCard description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."} src={`${projectPhoto}`} title={"Project 3"}></ProjectCard>
-                     <ProjectCard description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."} src={`${projectPhoto}`} title={"Project 4"}></ProjectCard>
+                     <ProjectCard description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."} src={`${uber}`} title={"Uber"}></ProjectCard>
+                     <ProjectCard description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."} src={`${pulse}`} title={"Pulse"}></ProjectCard>
+                     <ProjectCard description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."} src={`${bread}`} title={"Bakery"}></ProjectCard>
+                     <ProjectCard description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."} src={`${mac}`} title={"Laptop store"}></ProjectCard>
                  </FlexWrapper>
              </Container>
         </StyledProjects>

@@ -14,10 +14,10 @@ export const Experience = () => {
                 {/*<WrapperExperiens>*/}
                     <Subtitle>Experience</Subtitle>
                     <FlexWrapper gap={"35px"}>
-                        <EcperiensCard experienceTitle={"2017"} experienceDescr={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor t ut labore et dolore magna aliqua."}/>
-                        <EcperiensCard experienceTitle={"2019"} experienceDescr={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor t ut labore et dolore magna aliqua."}/>
-                        <EcperiensCard experienceTitle={"2021"} experienceDescr={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor t ut labore et dolore magna aliqua."}/>
-                        <EcperiensCard experienceTitle={"2023"} experienceDescr={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor t ut labore et dolore magna aliqua."} isLast={true}/>
+                        <EcperiensCard experienceTitle={"2017"} experienceDescr={"I started to master the profession of a front-end developer, studied the basics of HTML, CSS and JavaScript"}/>
+                        <EcperiensCard experienceTitle={"2019"} experienceDescr={"Got my first commercial experience, mastered the modern tool React.js"}/>
+                        <EcperiensCard experienceTitle={"2021"} experienceDescr={"Worked in a team on large projects, delved into application architecture, mastered TypeScript, Node.js and GraphQL"}/>
+                        <EcperiensCard experienceTitle={"2023"} experienceDescr={"Managed complex projects, actively used Next.js, Nuxt.js, Gatsby, optimized performance, implemented progressive technologies."} isLast={true}/>
                     </FlexWrapper>
                 {/*</WrapperExperiens>*/}
             </Container>
