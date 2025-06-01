@@ -5,13 +5,14 @@ import {FlexWrapper} from "../FlexWrapper.tsx";
 type EcperiensCardPropsType = {
     experienceTitle: string
     experienceDescr: string
+    isLast?: boolean
 }
 
 export const EcperiensCard = (props: EcperiensCardPropsType) => {
     return (
         <StyledEcperiensCard>
             <FlexWrapper direction={"column"}>
-                <EcperiensCardTitle>{props.experienceTitle}</EcperiensCardTitle>
+                <EcperiensCardTitle isLast={props.isLast}>{props.experienceTitle}</EcperiensCardTitle>
                 <EcperiensCardDescr>{props.experienceDescr}</EcperiensCardDescr>
             </FlexWrapper>
         </StyledEcperiensCard>
@@ -22,7 +23,7 @@ export const EcperiensCard = (props: EcperiensCardPropsType) => {
 const StyledEcperiensCard = styled.div`
     width: 280px;
 `
-const EcperiensCardTitle = styled.h3`
+const EcperiensCardTitle = styled.h3<{ isLast?: boolean }>`
     font-weight: 600;
     font-size: 26px;
     text-align: center;
@@ -52,6 +53,10 @@ const EcperiensCardTitle = styled.h3`
         left:100%;
         transform: translateX(-45%);
         z-index: 1;
+
+        ${({ isLast } ) => isLast && `
+            display: none; 
+        `}
     }
 `
 

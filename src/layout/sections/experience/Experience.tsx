@@ -17,7 +17,7 @@ export const Experience = () => {
                         <EcperiensCard experienceTitle={"2017"} experienceDescr={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor t ut labore et dolore magna aliqua."}/>
                         <EcperiensCard experienceTitle={"2019"} experienceDescr={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor t ut labore et dolore magna aliqua."}/>
                         <EcperiensCard experienceTitle={"2021"} experienceDescr={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor t ut labore et dolore magna aliqua."}/>
-                        <EcperiensCard experienceTitle={"2023"} experienceDescr={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor t ut labore et dolore magna aliqua."}/>
+                        <EcperiensCard experienceTitle={"2023"} experienceDescr={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor t ut labore et dolore magna aliqua."} isLast={true}/>
                     </FlexWrapper>
                 {/*</WrapperExperiens>*/}
             </Container>
