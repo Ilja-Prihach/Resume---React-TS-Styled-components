@@ -16,9 +16,9 @@ export const Projects = () => {
          <StyledProjects>
              <Container>
                  <Subtitle>Projects</Subtitle>
-                 <FlexWrapper wrap={"wrap"} gap={"40px"}>
+                 <FlexWrapper wrap={"wrap"} gap={"60px 10px"} justify={"space-around"} grow={"1"}>
                      <ProjectCard description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."} src={`${uber}`} title={"Uber"}></ProjectCard>
-                     <ProjectCard description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."} src={`${pulse}`} title={"Pulse"}></ProjectCard>
+                     <ProjectCard description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."} src={`${pulse}`} title={"RunSmart"}></ProjectCard>
                      <ProjectCard description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."} src={`${bread}`} title={"Bakery"}></ProjectCard>
                      <ProjectCard description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."} src={`${mac}`} title={"Laptop store"}></ProjectCard>
                  </FlexWrapper>
@@ -28,7 +28,6 @@ export const Projects = () => {
 };
 
 const StyledProjects = styled.section`
-
     min-height: 100vh;
 `
 

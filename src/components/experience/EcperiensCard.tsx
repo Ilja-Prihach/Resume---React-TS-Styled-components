@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import {theme} from "../../styles/Theme.tsx";
-import {FlexWrapper} from "../FlexWrapper.tsx";
+// import {FlexWrapper} from "../FlexWrapper.tsx";
 
 type EcperiensCardPropsType = {
     experienceTitle: string
@@ -11,10 +11,8 @@ type EcperiensCardPropsType = {
 export const EcperiensCard = (props: EcperiensCardPropsType) => {
     return (
         <StyledEcperiensCard>
-            <FlexWrapper direction={"column"}>
                 <EcperiensCardTitle isLast={props.isLast}>{props.experienceTitle}</EcperiensCardTitle>
                 <EcperiensCardDescr>{props.experienceDescr}</EcperiensCardDescr>
-            </FlexWrapper>
         </StyledEcperiensCard>
 
     );
@@ -22,6 +20,9 @@ export const EcperiensCard = (props: EcperiensCardPropsType) => {
 
 const StyledEcperiensCard = styled.div`
     width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 `
 const EcperiensCardTitle = styled.h3<{ isLast?: boolean }>`
     font-weight: 600;
@@ -41,22 +42,22 @@ const EcperiensCardTitle = styled.h3<{ isLast?: boolean }>`
         bottom: 0;
         z-index: 2;
     }
-    &::after{
-        content: "";
-        position: absolute;
-        width: calc(100% + 10%);
-        height: 8px;
-        border-radius: 83px;
-        background: ${theme.colors.accent};
-        bottom: 8px;
-        left:100%;
-        transform: translateX(-45%);
-        z-index: 1;
-
-        ${({ isLast } ) => isLast && `
-            display: none; 
-        `}
-    }
+    // &::after{
+    //     content: "";
+    //     position: absolute;
+    //     width: calc(100% + 10%);
+    //     height: 8px;
+    //     border-radius: 83px;
+    //     background: ${theme.colors.accent};
+    //     bottom: 8px;
+    //     left:100%;
+    //     transform: translateX(-45%);
+    //     z-index: 1;
+    //
+    //     ${({ isLast } ) => isLast && `
+    //         display: none; 
+    //     `}
+    // }
 `
 
 

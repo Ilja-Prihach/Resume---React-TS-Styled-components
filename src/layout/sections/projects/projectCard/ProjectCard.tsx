@@ -26,7 +26,7 @@ const CardWrapper = styled.div`
     flex-direction: column;
     border: 1px solid #a39d9d;
     border-radius: 50px 0;
-    width: 549px;
+    width: 459px;
     min-height: 670px;
     background-color: ${theme.colors.primaryBg};
     padding: 25px;
@@ -35,7 +35,7 @@ const CardWrapper = styled.div`
 
 const ProjectImg = styled.img`
     border-radius: 24px 8px 8px 8px;
-    max-width: 500px;
+    width: 100%;
     height: 280px;
     object-fit: cover;
 `
@@ -55,7 +55,6 @@ const ProjectTitle = styled.h2`
         width: 300px;
         height: 4px;
          background: ${theme.colors.accent};
-       // background-color: red;
         position: absolute;
         left: 50%;
         bottom: -23px;

@@ -41,6 +41,7 @@ const Photo = styled.img`
 const StyledMain =  styled.section`
     display: flex;
     min-height: 100vh;
+    overflow-x: clip;
 `
 const MainTitle = styled.h1`
     font-weight: 600;

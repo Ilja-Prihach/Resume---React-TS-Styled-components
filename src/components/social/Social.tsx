@@ -41,6 +41,6 @@ const StyledSocial = styled.nav`
 const Link = styled.a`
     &:hover > * {
         transform: scale(1.15);
-        filter: drop-shadow(0 0 10px rgb(225, 28, 222)); 
+        filter: drop-shadow(0 0 10px rgb(28, 202, 225));
     }
 `;

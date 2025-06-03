@@ -43,7 +43,8 @@ const Link = styled.a`
         position: absolute;
         width: 100%;
         height: 2px;
-        background: linear-gradient(to right, #ff0000, #00ffff);
+        background: linear-gradient(to right, rgba(153, 0, 255, 0.82), #00ffff);
+        //background: linear-gradient(to right, #ff0000, #00ffff);
         bottom: -5px;
         left: 0;
         transform: scaleX(0);
