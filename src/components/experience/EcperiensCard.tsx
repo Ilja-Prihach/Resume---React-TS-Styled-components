@@ -23,6 +23,13 @@ const StyledEcperiensCard = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media ${theme.media.tablet} {
+        width: 400px;
+        align-items: flex-start;
+    }
+    @media ${theme.media.mobile} {
+        width: 300px;
+    }
 `
 const EcperiensCardTitle = styled.h3<{ isLast?: boolean }>`
     font-weight: 600;
@@ -41,6 +48,14 @@ const EcperiensCardTitle = styled.h3<{ isLast?: boolean }>`
         transform: translateX(-50%);
         bottom: 0;
         z-index: 2;
+        @media ${theme.media.tablet} {
+            //transform: translateY(25%);
+            bottom: 33px;
+            left: -50px;
+        }
+        @media ${theme.media.mobile} {
+        left: -40px;
+    }
     }
     // &::after{
     //     content: "";
@@ -66,4 +81,11 @@ const EcperiensCardDescr = styled.p`
     font-size: 18px;
     text-align: center;
     padding-top: 20px;
+    @media ${theme.media.tablet} {
+        padding-top: 0px;
+        text-align: left;
+    },
+    @media ${theme.media.mobile} {
+        font-size: 16px;
+}
 `

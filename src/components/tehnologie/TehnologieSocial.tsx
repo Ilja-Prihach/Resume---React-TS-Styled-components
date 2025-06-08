@@ -1,6 +1,7 @@
 
 import Icon from "../icon/Icon.tsx";
 import styled from "styled-components";
+import {theme} from "../../styles/Theme.tsx";
 
 
 export const TehnologieSocial = () => {
@@ -32,6 +33,9 @@ const StyledTehnologieSocial = styled.div`
     ul {
         display: flex;
         gap: 50px;
+        @media ${theme.media.mobile} {
+            gap: 25px;
+        }
     }
 `
 

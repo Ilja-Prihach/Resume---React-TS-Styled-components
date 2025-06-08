@@ -36,6 +36,9 @@ export const TehnologiesSubtitle = styled.h2`
     font-weight: 600;
     font-size: 44px;
     color: #fff;
+    @media ${theme.media.mobile} {
+        font-size: 27px;
+    }
 `
 
 const CardWrapper = styled.div`
@@ -44,4 +47,7 @@ const CardWrapper = styled.div`
     align-items: center;
     gap: 25px;
     padding-bottom: 120px;
+    @media ${theme.media.tablet} {
+        padding-bottom: 100px;
+    }
 `

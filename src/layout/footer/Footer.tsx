@@ -10,7 +10,7 @@ export const Footer = () => {
     return (
         <StyledFooter>
             <Container>
-                <FlexWrapper justify={"space-around"} align={"center"}>
+                <FlexWrapper justify={"space-around"} align={"center"} wrap={"wrap"}>
                     <Contacts contactsTitle={"Call me:"} contactsContent={"+375-33-937-99-92"}/>
                     <Contacts contactsTitle={"Email:"} contactsContent={"prihach95@mail.ru"}/>
                     <Social/>
@@ -24,4 +24,15 @@ const StyledFooter = styled.footer`
     background-color: ${theme.colors.primaryBg} ;
     min-height: 150px;
     display: flex;
+    @media ${theme.media.mobile} {
+        & > ${Container} > ${FlexWrapper} {
+            align-items: flex-start;
+            justify-content: space-between; 
+            gap:30px;
+            :last-child {
+                margin-right: auto;
+                margin-left: auto;
+            }
+        }
+    }
 `

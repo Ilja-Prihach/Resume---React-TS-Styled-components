@@ -1,5 +1,6 @@
 
 import styled from "styled-components";
+import {theme} from "../../styles/Theme.tsx";
 
 
 
@@ -31,7 +32,16 @@ const TehnologieProgress = styled.div<{ superprogress?: number }>`
     width: 900px;
     height: 17px;
     border-radius: 83px;
-    overflow: hidden;
+    @media ${theme.media.largeDesktop} {
+        width: 710px;
+    }
+    @media ${theme.media.tablet} {
+        width: 530px;
+    }
+    @media ${theme.media.mobile} {
+        width: 330px;
+    }
+    //overflow: hidden;
     &::before {
         content:'';
         width: ${props => props.superprogress || 0}%;

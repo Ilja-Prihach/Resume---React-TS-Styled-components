@@ -7,5 +7,8 @@ export const Subtitle = styled.h2`
     font-size: 46px;
     color: ${theme.colors.font};
     padding-bottom: 70px;
+    @media ${theme.media.mobile} {
+        font-size: 32px;
+    }
 `
 

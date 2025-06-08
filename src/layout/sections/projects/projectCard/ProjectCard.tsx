@@ -31,6 +31,9 @@ const CardWrapper = styled.div`
     background-color: ${theme.colors.primaryBg};
     padding: 25px;
     gap: 50px;
+    @media ${theme.media.largeDesktop} {
+        width: 560px;
+    }
 `
 
 const ProjectImg = styled.img`

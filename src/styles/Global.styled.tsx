@@ -41,6 +41,9 @@ export const GlobalStyle = createGlobalStyle`
     
     section {
         padding: 100px 0px 140px;
+        @media ${theme.media.tablet} {
+            padding: 80px 0px 90px;
+        }
     }
     
     section:nth-of-type(odd) {

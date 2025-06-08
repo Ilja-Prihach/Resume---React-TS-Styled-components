@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {theme} from "../../styles/Theme.tsx";
 
 
 export const Navigation = () => {
@@ -27,6 +28,9 @@ const StyledNav = styled.nav`
     ul {
         display: flex;
         gap: 80px;
+        @media ${theme.media.largeDesktop} {
+            gap: 15px;
+        }
     }
     a {
         font-weight: 500;
@@ -34,6 +38,7 @@ const StyledNav = styled.nav`
         position: relative; 
         overflow: hidden; 
     }
+
 `;
 
 const Link = styled.a`

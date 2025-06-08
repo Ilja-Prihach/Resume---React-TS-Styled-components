@@ -25,12 +25,19 @@ export const Experience = () => {
 
 const StyledExperience = styled.section`
     min-height: 600px;
-
 `
 const CardWrapper = styled.div`
     display: flex;
     gap: 35px;
     position: relative;
+    @media ${theme.media.tablet} {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 140px;
+    }
+    @media ${theme.media.mobile} {
+        padding-left: 60px;
+    }
     &::after{
         content: "";
         position: absolute;
@@ -42,5 +49,18 @@ const CardWrapper = styled.div`
         top: 51px;
         transform: translate(-50%,-50%);
         z-index: 1;
+        @media ${theme.media.tablet} {
+            transform-origin: left;
+            rotate: 90deg;
+            transform: none;
+            left: 90px;
+            width: 500px;
+            top:20px
+        }
+        @media ${theme.media.mobile} {
+            left: 20px;
+            width: 585px;
+        }
     }
+
 `
