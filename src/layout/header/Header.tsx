@@ -15,6 +15,7 @@ export const Header = () => {
                     <Navigation/>
                     <Social/>
                 </FlexWrapper>
+
             </Container>
         </StyledHeader>
     );
@@ -29,6 +30,6 @@ const StyledHeader = styled.header`
     z-index: 999;
     
     @media ${theme.media.tablet} {
-        
+        display: none;
     }
 `

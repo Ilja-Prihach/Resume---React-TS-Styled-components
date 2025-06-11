@@ -1,24 +1,25 @@
 import styled from "styled-components";
-import Logo from "../../components/logo/Logo.tsx";
-import Navigation from "../../components/navigation/Navigation.tsx";
-import Social from "../../components/social/Social.tsx";
-import {theme} from "../../styles/Theme.tsx";
-import {Container} from "../../components/Container.tsx";
-import {FlexWrapper} from "../../components/FlexWrapper.tsx";
-import Icon from "../../../components/icon/Icon.t
+import Logo from "../../../components/logo/Logo.tsx";
+import Navigation from "../../../components/navigation/Navigation.tsx";
+import Social from "../../../components/social/Social.tsx";
+import {theme} from "../../../styles/Theme.tsx";
+import {Container} from "../../../components/Container.tsx";
+import Icon from "../../../components/icon/Icon.tsx";
+// import {FlexWrapper} from "../../components/FlexWrapper.tsx";
+
 
 export const MobileHeader = () => {
     return (
         <StyledMobileHeader>
             <Container>
-                <BurgerButton>
+                <BurgerButton isOpen={true}>
                     <Icon iconId={'burgerMenu'} />
                 </BurgerButton>
-                <FlexWrapper direction={"column"} align={"center"}>
+                <MobileMenuWrapper isOpen={true}>
                     <Logo/>
                     <Navigation/>
                     <Social/>
-                </FlexWrapper>
+                </MobileMenuWrapper>
             </Container>
         </StyledMobileHeader>
     );
@@ -37,7 +38,10 @@ const StyledMobileHeader = styled.header`
     }
 `
 
-const BurgerButton = styled.button`
+const BurgerButton = styled.button<{isOpen: boolean}>`
+    position: fixed;
+    top: -100px;
+    right: -100px;
     height: calc(53px * 3);
     width: calc(35px * 3);
 
@@ -85,4 +89,27 @@ const BurgerButton = styled.button`
             stroke-dashoffset: 0;
         }
     }
+`
+
+const MobileMenuWrapper = styled.div<{isOpen: boolean}>`
+    position: fixed;
+    background-color: rgba(31, 31, 32, 0.9);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    
+    display: none;
+    
+    ${props => props.isOpen && css<{isOpen: boolean}>`
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    `}
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 `

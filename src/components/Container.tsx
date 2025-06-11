@@ -11,6 +11,5 @@ export const Container = styled.div`
     border: 1px solid red;
     @media ${theme.media.mobile} {
         padding-bottom: 70px;
-        margin-top: 70px;
     }
 `
