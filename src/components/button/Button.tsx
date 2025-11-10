@@ -59,4 +59,9 @@ export const Button = styled.button`
             background-position: 0 0;
         }
     }
+
+    &:focus-visible {
+        outline: 2px solid #fff;
+        outline-offset: 2px;
+    }
 `

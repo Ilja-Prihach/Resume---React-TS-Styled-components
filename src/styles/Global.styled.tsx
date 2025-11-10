@@ -3,6 +3,9 @@ import {theme} from "./Theme.tsx";
 
 
 export const GlobalStyle = createGlobalStyle`
+    html {
+        scroll-behavior: smooth; 
+    }
     *,
     *::before,
     *::after {

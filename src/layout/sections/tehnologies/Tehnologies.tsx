@@ -9,7 +9,7 @@ import {Container} from "../../../components/Container.tsx";
 
 export const Tehnologies = () => {
     return (
-        <StyledTehnologies>
+        <StyledTehnologies id="technologies">
             <Container>
                 <Subtitle>Technologies</Subtitle>
                 <CardWrapper >

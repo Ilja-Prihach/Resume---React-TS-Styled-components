@@ -13,14 +13,30 @@ import {Container} from "../../../components/Container.tsx";
 
 export const Projects = () => {
     return (
-         <StyledProjects>
+         <StyledProjects id="projects">
              <Container>
                  <Subtitle>Projects</Subtitle>
                  <FlexWrapper wrap={"wrap"} gap={"60px 10px"} justify={"space-around"} grow={"1"}>
-                     <ProjectCard description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."} src={`${uber}`} title={"Uber"}></ProjectCard>
-                     <ProjectCard description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."} src={`${pulse}`} title={"RunSmart"}></ProjectCard>
-                     <ProjectCard description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."} src={`${bread}`} title={"Bakery"}></ProjectCard>
-                     <ProjectCard description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."} src={`${mac}`} title={"Laptop store"}></ProjectCard>
+                     <ProjectCard
+                         description={"Adaptive landing page for taxi service. Implemented complex order form with validation and interactive map."}
+                         src={`${uber}`}
+                         title={"Uber"}
+                     />
+                     <ProjectCard
+                         description={"Online store of smart watches with filtering system, shopping cart and payment system integration."}
+                         src={`${pulse}`}
+                         title={"RunSmart"}
+                     />
+                     <ProjectCard
+                         description={"Website for a bakery with product catalog, order system and content management system for the owner."}
+                         src={`${bread}`}
+                         title={"Bakery"}
+                     />
+                     <ProjectCard
+                         description={"E-commerce platform for laptop sales with product comparison, reviews and order tracking system."}
+                         src={`${mac}`}
+                         title={"Laptop store"}
+                     />
                  </FlexWrapper>
              </Container>
         </StyledProjects>

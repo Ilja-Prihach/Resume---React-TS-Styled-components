@@ -1,4 +1,4 @@
-import styled from "styled-components";
+
 import Logo from "../../../components/logo/Logo.tsx";
 import Navigation from "../../../components/navigation/Navigation.tsx";
 import Social from "../../../components/social/Social.tsx";
@@ -6,6 +6,7 @@ import {theme} from "../../../styles/Theme.tsx";
 import {Container} from "../../../components/Container.tsx";
 import Icon from "../../../components/icon/Icon.tsx";
 // import {FlexWrapper} from "../../components/FlexWrapper.tsx";
+import styled, { css } from "styled-components";
 
 
 export const MobileHeader = () => {

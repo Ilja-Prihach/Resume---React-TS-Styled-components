@@ -9,7 +9,7 @@ import {theme} from "../../../styles/Theme.tsx";
 
 export const Experience = () => {
     return (
-        <StyledExperience>
+        <StyledExperience id="experience">
             <Container>
                     <Subtitle>Experience</Subtitle>
                     <CardWrapper>

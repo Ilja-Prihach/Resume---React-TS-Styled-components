@@ -7,17 +7,20 @@ export const Social = () => {
         <StyledSocial>
             <ul>
                 <li>
-                    <Link href="#">
+                    <Link href="https://github.com/Ilja-Prihach"
+                          target="_blank">
                         <Icon iconId={'githubNav'} />
                     </Link>
                 </li>
                 <li>
-                    <Link href="#">
+                    <Link href="https://www.linkedin.com/in/ilja-prihach-298204172"
+                          target="_blank">
                         <Icon iconId={'linkedinNav'} />
                     </Link>
                 </li>
                 <li>
-                    <Link href="#">
+                    <Link href="https://t.me/Ilja_prihach"
+                          target="_blank">
                         <Icon iconId={'telegramNav'} />
                     </Link>
                 </li>

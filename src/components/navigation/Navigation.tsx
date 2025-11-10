@@ -7,13 +7,13 @@ export const Navigation = () => {
         <StyledNav>
             <ul>
                 <li>
-                    <Link href="#">Projects</Link>
+                    <Link href="#projects">Projects</Link>
                 </li>
                 <li>
-                    <Link href="#">Technologies</Link>
+                    <Link href="#technologies">Technologies</Link>
                 </li>
                 <li>
-                    <Link href="#">About me</Link>
+                    <Link href="#experience">Experience</Link>
                 </li>
             </ul>
         </StyledNav>

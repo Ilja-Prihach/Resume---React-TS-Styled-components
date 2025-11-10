@@ -31,6 +31,12 @@ const CardWrapper = styled.div`
     background-color: ${theme.colors.primaryBg};
     padding: 25px;
     gap: 50px;
+    transition: transform 0.3s ease; 
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+
     @media ${theme.media.largeDesktop} {
         width: 560px;
     }
